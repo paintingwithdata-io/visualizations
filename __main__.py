@@ -17,7 +17,7 @@ def main():
 
     # Prompt to select which visualization should be generated based on the sql query selected
     # The query name must match the visualization module name exactly in order for this to work
-    query = filedialog.askopenfilename(initialdir=cfg["filedir"])  # Selecting the sql queryu
+    query = filedialog.askopenfilename(initialdir=cfg["filedir"])  # Selecting the sql query
     viz_name = (os.path.basename(query)).split('.')[0]  # Retrieving the query name only
 
     # Connecting to the postgres database and selecting the appropriate sql query
